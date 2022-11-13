@@ -1,5 +1,3 @@
-
-
 package ru.job4j;
 
     public class Info {
@@ -7,5 +5,3 @@ package ru.job4j;
             System.out.println("19.01.2020");
         }
     }
-
-
