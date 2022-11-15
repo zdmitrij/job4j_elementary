@@ -33,9 +33,9 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP12K9Square323() {
-        double expected = 3.23;
-        double p = 12;
+    public void whenP13K9Square380() {
+        double expected = 3.80;
+        double p = 13;
         double k = 9;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
