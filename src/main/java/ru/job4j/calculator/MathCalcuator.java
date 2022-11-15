@@ -17,8 +17,8 @@ public class MathCalcuator {
     }
 
         public static void main(String[] args) {
-            System.out.println("Результат расчета сложения суммы и умножения равен: " + sumAndMultiply(10, 20));
-            System.out.println("Результат расчета сложения деления и разности равен: " + divisionAndDifference(10, 20));
-            System.out.println("Результат расчета сложения суммы, умножения, деления и разности равен: " + sumAndMulyiplyAndDivisionAndDifference(10, 20));
+            System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СЂР°СЃС‡РµС‚Р° СЃР»РѕР¶РµРЅРёСЏ СЃСѓРјРјС‹ Рё СѓРјРЅРѕР¶РµРЅРёСЏ СЂР°РІРµРЅ: " + sumAndMultiply(10, 20));
+            System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СЂР°СЃС‡РµС‚Р° СЃР»РѕР¶РµРЅРёСЏ РґРµР»РµРЅРёСЏ Рё СЂР°Р·РЅРѕСЃС‚Рё СЂР°РІРµРЅ: " + divisionAndDifference(10, 20));
+            System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ СЂР°СЃС‡РµС‚Р° СЃР»РѕР¶РµРЅРёСЏ СЃСѓРјРјС‹, СѓРјРЅРѕР¶РµРЅРёСЏ, РґРµР»РµРЅРёСЏ Рё СЂР°Р·РЅРѕСЃС‚Рё СЂР°РІРµРЅ: " + sumAndMulyiplyAndDivisionAndDifference(10, 20));
         }
 }
