@@ -8,7 +8,7 @@ public class MultipleSwitchWeekTest {
     @Test
     public void whenMondaythen1() {
             int expected = 1;
-            String name = "Понедельник";
+            String name = "РџРѕРЅРµРґРµР»СЊРЅРёРє";
             int out = MultipleSwitchWeek.numberOfDay(name);
             Assert.assertEquals(expected, out);
     }
