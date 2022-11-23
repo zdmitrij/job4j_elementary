@@ -22,6 +22,8 @@ public class MatrixCheckTest {
                 {'X', 'X', 'X', ' ', 'X'},
                 {' ', 'X', 'X', ' ', 'X'},
                 {'X', 'X', ' ', ' ', ' '},
+                {'X', 'X', 'X', 'X', 'X'},
+                {'X', 'X', 'X', 'X', 'X'},
         };
         int row = 0;
         boolean result = MatrixCheck.monoHorizontal(input, row);
@@ -34,9 +36,36 @@ public class MatrixCheckTest {
                 {'X', ' ', 'X', ' ', 'X'},
                 {' ', 'X', 'X', ' ', 'X'},
                 {' ', ' ', ' ', ' ', ' '},
+                {' ', 'X', ' ', ' ', ' '},
+                {' ', ' ', 'X', 'X', 'X'},
         };
         int row = 2;
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertThat(result).isTrue();
+    }
+
+    @Test
+    public void whenHasMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        int column = 2;
+        boolean result = MatrixCheck.monoVertical(input, column);
+        assertThat(result).isTrue();
+    }
+
+    @Test
+    public void whenNoHasMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X', 'X'},
+                {' ', ' ', 'X', ' '},
+                {' ', ' ', 'X', 'X'},
+                {' ', ' ', 'X', 'X'},
+        };
+        int column = 3;
+        boolean result = MatrixCheck.monoVertical(input, column);
+        assertThat(result).isFalse();
     }
 }
