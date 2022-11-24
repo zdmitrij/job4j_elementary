@@ -31,17 +31,17 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenHasMonoEmptyHorizontal() {
+    public void whenHas5MixedHorizontal() {
         char[][] input = {
                 {'X', ' ', 'X', ' ', 'X'},
                 {' ', 'X', 'X', ' ', 'X'},
-                {' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
                 {' ', 'X', ' ', ' ', ' '},
                 {' ', ' ', 'X', 'X', 'X'},
         };
         int row = 2;
         boolean result = MatrixCheck.monoHorizontal(input, row);
-        assertThat(result).isTrue();
+        assertThat(result).isFalse();
     }
 
     @Test
