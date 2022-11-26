@@ -5,28 +5,22 @@ public class JavaNameValidator {
     @SuppressWarnings("checkstyle:InnerAssignment")
     public static boolean isNameValid(String name) {
         boolean rsl = true;
-        if (name.isEmpty()) {
-            rsl = false;
+        if (name.isEmpty() || Character.isUpperCase(name.codePointAt(0))
+                || Character.isDigit(name.codePointAt(0))) {
+            return false;
         }
-        for (int i = 0; i < name.length(); i++) {
+        for (int i = 1; i < name.length(); i++) {
             int code = name.codePointAt(i);
-            if (i == 0) {
-                if (Character.isUpperCase(code) || Character.isDigit(code)) {
-                    rsl = false;
-                }
+            if (isSpecialSymbol(code) || isUpperLatinLetter(code) || isLowerLatinLetter(code)
+                    || Character.isDigit(code)) {
+                continue;
             } else {
-                if (isSpecialSymbol(code) || isUpperLatinLetter(code) || isLowerLatinLetter(code)
-                        || Character.isDigit(code)) {
-                    rsl = true;
-                }
-            }
-            if (!rsl) {
+                rsl = false;
                 break;
             }
         }
-
         return rsl;
-}
+    }
 
     public static boolean isSpecialSymbol(int code) {
         return code == 36 || code == 95;
