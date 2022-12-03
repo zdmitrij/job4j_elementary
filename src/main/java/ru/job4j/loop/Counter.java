@@ -9,7 +9,7 @@ public class Counter {
         return sum;
     }
 
-        public static int sumByEven(int start, int finish) {
+    public static int sumByEven(int start, int finish) {
             int sum = 0;
             for (int a = start; a <= finish; a++) {
                 if (a % 2 == 0) {
@@ -28,5 +28,4 @@ public class Counter {
         System.out.println(sumByEven(3, 8));
         System.out.println(sumByEven(1, 1));
     }
-
-    }
+}

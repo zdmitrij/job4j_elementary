@@ -14,4 +14,3 @@ package ru.job4j.condition;
             System.out.println("result (1, 3) to (-4, 8) " + result3);
         }
     }
-

@@ -16,5 +16,4 @@ public class Calculator {
         Calculator.plus(10, 11);
        int result3 = Calculator.func1(100);
     }
-
 }
