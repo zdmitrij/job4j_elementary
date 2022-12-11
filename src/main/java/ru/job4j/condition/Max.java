@@ -10,6 +10,6 @@ public class Max {
     }
 
     public static int max(int left, int right, int middle, int maximal) {
-       return max(max(right, maximal), max(middle, max(left, right, middle)));
+       return max(max(right, maximal), max(middle, left));
     }
 }
